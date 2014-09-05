@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hq.manipulatestack" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".payment.ProductListActivity"
+            android:label="@string/title_activity_product_list"
+            android:taskAffinity="com.example.hq.manipulatestack.payment" />
+        <activity
+            android:name=".payment.ProductDetailActivity"
+            android:label="@string/title_activity_product_detail"
+            android:taskAffinity="com.example.hq.manipulatestack.payment" />
+        <activity
+            android:name=".payment.CheckoutActivity"
+            android:label="@string/title_activity_checkout"
+            android:taskAffinity="com.example.hq.manipulatestack.payment" >
+        </activity>
+        <activity
+            android:name=".ReceiptActivity"
+            android:label="@string/title_activity_receipt" >
+        </activity>
+        <activity
+            android:name=".DoOtherStuffActivity"
+            android:label="@string/title_activity_do_other_stuff" >
+        </activity>
+    </application>
+
+</manifest>
